@@ -26,6 +26,8 @@ gulp.task('build-less', function(){
 });
 ```
 
+# serving files 
+``` javascript
 // browser sync
 var browserSync = require('browser-sync').create();
 gulp.task('browser-sync', function() {
@@ -37,3 +39,4 @@ gulp.task('browser-sync', function() {
 
     gulp.watch("*.*").on('change', browserSync.reload);
 });
+```
