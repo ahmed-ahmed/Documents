@@ -15,7 +15,7 @@ gulp.task('print', function(){
 });
 ```
 
-# compiling less 
+## compiling less 
 ``` javascript
 // Build CSS
 var less = require('gulp-less');
@@ -26,7 +26,8 @@ gulp.task('build-less', function(){
 });
 ```
 
-# serving files 
+## serving files 
+https://www.browsersync.io/docs/gulp/ 
 ``` javascript
 // browser sync
 var browserSync = require('browser-sync').create();
