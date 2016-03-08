@@ -1,5 +1,7 @@
 # Gulp
 
+https://travismaynard.com/writing/getting-started-with-gulp 
+
 ## To add watcher
 ``` javascript
 var gulp = require('gulp');
