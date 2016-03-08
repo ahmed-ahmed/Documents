@@ -25,3 +25,15 @@ gulp.task('build-less', function(){
         .pipe(gulp.dest('./css'));
 });
 ```
+
+// browser sync
+var browserSync = require('browser-sync').create();
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("*.*").on('change', browserSync.reload);
+});
