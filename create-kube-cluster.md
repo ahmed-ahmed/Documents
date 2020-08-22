@@ -66,11 +66,12 @@ Now, on the Kube master node, make sure your nodes joined the cluster successful
 kubectl get nodes
 ```
 Verify that all three of your nodes are listed. It will look something like this:
-
+```
 NAME            STATUS     ROLES    AGE   VERSION
 ip-10-0-1-101   NotReady   master   30s   v1.12.2
 ip-10-0-1-102   NotReady   &lt;none>   8s    v1.12.2
 ip-10-0-1-103   NotReady   &lt;none>   5s    v1.12.2
+```
 Note that the nodes are expected to be in the NotReady state for now.
 
 Set up cluster networking with flannel.
@@ -91,7 +92,9 @@ kubectl get nodes
 ```
 After a short time, all three nodes should be in the Ready state. If they are not all Ready the first time you run kubectl get nodes, wait a few moments and try again. It should look something like this:
 
+```
 NAME            STATUS   ROLES    AGE   VERSION
 ip-10-0-1-101   Ready    master   85s   v1.12.2
 ip-10-0-1-102   Ready    <none>   63s   v1.12.2
 ip-10-0-1-103   Ready    <none>   60s   v1.12.2
+```
